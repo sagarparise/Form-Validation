@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form Validation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<div class="container">
+  <i class='bx bxl-telegram'></i>
+  <form action="">
+
+    <div class="input-group">
+      <input type="text" id="name" required onkeyup="validateName()">
+      <label for="name">Full Name</label>
+      <span id="name-error"></span>
+    </div>
+
+    <div class="input-group">
+      <input type="email" id="email" required onkeyup="validateEmail()">
+      <label for="email">Email id</label>
+      <span id="email-error"></span>
+    </div>
+
+    <div class="input-group">
+      <input type="tel" id="number" required onkeyup="validatePhone()">
+      <label for="number">Phone Number</label>
+      <span id="phone-error"></span>
+    </div>
+
+    <div class="gender-group">
+      <span>Gender :</span>
+      <input type="radio" name="gender" id="male">
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female">
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" id="other">
+      <label for="other">Other</label>
+    </div>
+
+    <div class="text-group">
+      <textarea name="" id="textArea" rows="5" onkeyup="validateMessage()"></textarea>
+      <label for="textArea">Your Message</label>
+      <span id="message-error"></span>
+    </div>
+
+    <button onclick="return validateForm()">Submit</button>
+    <span id="submit-error"></span>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

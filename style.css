@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background-color: rgb(0, 0, 0);
+ 
+}
+.container{
+  width: 400px;
+  height: 550px;
+  padding: 20px;
+  padding-top: 50px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #ffffff36;
+  box-shadow: 0px 0px 5px 1px #ffffff16;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 20px;
+ position: relative;
+}
+.container>i{
+  font-size: 25px;
+  padding: 13px;
+  border: 1px solid rgba(128, 128, 128, 0.292);
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 2px #6e6a6a21;
+  background-color: #fff;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+form{
+  height: 100%;
+  padding-inline: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.input-group{
+ 
+  position: relative;
+ 
+}
+.input-group input{
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #00000036;
+  border-radius: 10px;
+  outline: none;
+
+}
+.input-group label{
+ 
+  font-size: 16px;
+  padding: 0px 10px;
+  color: #0000009b;
+  background-color: #fff;
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  transition: top .3s;
+
+}
+
+.gender-group{
+  padding: 5px 10px;
+  color: #000000;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.text-group{
+  margin-top: 10px;
+  position: relative;
+}
+.text-group textarea{
+ 
+  width: 100%;
+  padding: 10px;
+  padding-right: 50px;
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #00000036;
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+
+}
+.text-group label
+{
+  font-size: 16px;
+  padding: 0px 10px;
+  color: #0000009b;
+  background-color: #ffffff;
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  transition: top .3s;
+}
+/* .text-group textarea:focus ~ label
+{
+  top: -10px;
+  background-color: #ffffff;
+  color: #0000009b;
+  
+} */
+form button{
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+ align-self: center;
+ font-size: 18px;
+ font-weight: 600;
+ color: #ffffff;
+ background-color: #000;
+  
+}
+.input-group span, .text-group span, #submit-error{
+  font-size: 15px;
+  color: red;
+  width: fit-content;
+ 
+}
+.input-group span i{
+  color: #24b124;
+  font-size: 20px;
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  
+}
+.text-group span i{
+  color: rgb(36, 177, 36);
+  font-size: 20px;
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+}
